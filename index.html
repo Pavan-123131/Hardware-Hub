@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hardware Hub</h1>
+        <nav>
+            <a href="cart.html">Cart</a>
+            <a href="checkout.html">Checkout</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Build Your Custom PC</h2>
+        <div id="components">
+            <!-- Example component -->
+            <div class="component">
+                <h3>Cabinet</h3>
+                <button onclick="addComponent('Cabinet', 1000)">Add</button>
+                <p>Price: ₹1000</p>
+            </div>
+            <!-- Add more components similarly -->
+        </div>
+        <div id="total-price">Total Price: <span>0</span></div>
+        <button onclick="goToCart()">Go to Cart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
